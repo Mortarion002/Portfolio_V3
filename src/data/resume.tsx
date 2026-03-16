@@ -122,7 +122,7 @@ export const DATA = {
     {
       title: "Production-rag",
       href: "https://github.com/Mortarion002/Production-rag",
-      dates: "2024",
+      dates: "2025",
       active: true,
       description:
         "A self-correcting RAG system built with LangGraph, Langsmith and FastAPI that employs a \"retrieve-grade-generate\" workflow to ensure high-accuracy answers.",
@@ -140,7 +140,7 @@ export const DATA = {
     {
       title: "Gig-Marketplace",
       href: "https://github.com/Mortarion002/Gig-Marketplace",
-      dates: "2024",
+      dates: "2025",
       active: true,
       description:
         "A full-stack distributed gig economy platform that connects customers with nearby providers in real-time using Redis geo-spatial routing, WebSockets, and an interactive OpenStreetMap.",
@@ -158,7 +158,7 @@ export const DATA = {
     {
       title: "Agentic-AI",
       href: "https://github.com/Mortarion002/Agentic-AI",
-      dates: "2024",
+      dates: "2025",
       active: true,
       description:
         "Advanced AI workflow and smart agent orchestrations built via Vercel AI-SDK @v5.",
@@ -176,7 +176,7 @@ export const DATA = {
     {
       title: "Rag-Vercel",
       href: "https://github.com/Mortarion002/Rag-Vercel",
-      dates: "2024",
+      dates: "2025",
       active: true,
       description:
         "RAG Chatbot that stores data in a vector database allowing users to interactively query and analyze custom documents.",
@@ -194,7 +194,7 @@ export const DATA = {
     {
       title: "Subscription_A2A",
       href: "https://github.com/Mortarion002/Subscription_A2A",
-      dates: "2024",
+      dates: "2025",
       active: true,
       description:
         "A proof of concept agentic workflow to automate subscription cancellation seamlessly using Agent-to-Agent (A2A) protocols.",
