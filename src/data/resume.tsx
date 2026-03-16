@@ -134,7 +134,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
+      image: "/projects/prodRag.png",
       video: "",
     },
     {
@@ -152,7 +152,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
+      image: "/projects/gig.png",
       video: "",
     },
     {
@@ -170,7 +170,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
+      image: "/projects/agentic.png",
       video: "",
     },
     {
@@ -188,7 +188,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
+      image: "/projects/verrag.png",
       video: "",
     },
     {
@@ -206,7 +206,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
+      image: "/projects/subpoc.png",
       video: "",
     },
     {
@@ -224,7 +224,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
+      image: "/projects/music-sync.png",
       video: "",
     },
   ],
