@@ -175,7 +175,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/projects/mcpclient.mp4", // rename "mcpclient.mp4" → mcpclient.mp4 (already fine)
+      video: "/projects/multimodalai.mp4", 
     },
     {
       title: "Rag-Vercel",
