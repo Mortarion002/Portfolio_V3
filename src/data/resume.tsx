@@ -156,8 +156,8 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/projects/gig.png", // no video recorded — keeping image
-      video: "",
+      image: "", // no video recorded — keeping image
+      video: "/projects/gigmarket.mp4", 
     },
     {
       title: "Agentic-AI",
