@@ -118,6 +118,10 @@ export const DATA = {
     },
   ],
 
+  // Updated projects array — replace the projects field in your DATA object with this.
+  // Place your .mp4 files in the /public/projects/ folder of your Next.js app.
+  // Rename files to match the paths below (remove spaces from filenames).
+
   projects: [
     {
       title: "Production-rag",
@@ -134,8 +138,8 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/projects/prodRag.png",
-      video: "",
+      image: "",
+      video: "/projects/langgraph-rag.mp4", // rename "Langgraph rag.mp4" → langgraph-rag.mp4
     },
     {
       title: "Gig-Marketplace",
@@ -152,7 +156,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/projects/gig.png",
+      image: "/projects/gig.png", // no video recorded — keeping image
       video: "",
     },
     {
@@ -170,8 +174,8 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/projects/agentic.png",
-      video: "",
+      image: "",
+      video: "/projects/mcpclient.mp4", // rename "mcpclient.mp4" → mcpclient.mp4 (already fine)
     },
     {
       title: "Rag-Vercel",
@@ -188,8 +192,8 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/projects/verrag.png",
-      video: "",
+      image: "",
+      video: "/projects/rag-vercel.mp4", // rename "Rag Vercel.mp4" → rag-vercel.mp4
     },
     {
       title: "Subscription_A2A",
@@ -206,8 +210,8 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/projects/subpoc.png",
-      video: "",
+      image: "",
+      video: "/projects/a2apoc.mp4", // rename "a2apoc.mp4" → a2apoc.mp4 (already fine)
     },
     {
       title: "music-sync",
@@ -224,8 +228,8 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/projects/music-sync.png",
-      video: "",
+      image: "", // no video recorded — keeping image
+      video: "/projects/musicsync.mp4",
     },
   ],
   hackathons: [] as Hackathon[],

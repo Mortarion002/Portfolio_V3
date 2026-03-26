@@ -1,3 +1,5 @@
+"use client";
+
 import { Badge } from "@/components/ui/badge";
 import {
   Card,
@@ -10,6 +12,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import { useState, useRef, useEffect } from "react";
 
 interface Props {
   title: string;
@@ -40,6 +43,25 @@ export function ProjectCard({
   links,
   className,
 }: Props) {
+  const [videoLoaded, setVideoLoaded] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    if (!video) return;
+    const el = videoRef.current;
+    if (!el) return;
+
+    // Already buffered enough (e.g. cached)
+    if (el.readyState >= 3) {
+      setVideoLoaded(true);
+      return;
+    }
+
+    // Fallback: remove shimmer after 3s no matter what
+    const fallback = setTimeout(() => setVideoLoaded(true), 3000);
+    return () => clearTimeout(fallback);
+  }, [video]);
+
   return (
     <Card
       className={
@@ -51,16 +73,29 @@ export function ProjectCard({
         className={cn("block cursor-pointer", className)}
       >
         {video && (
-          <video
-            src={video}
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="pointer-events-none mx-auto h-40 w-full object-cover object-top" // needed because random black line at bottom of video
-          />
+          <div className="relative h-40 w-full overflow-hidden">
+            {!videoLoaded && (
+              <div className="absolute inset-0 z-10 animate-pulse bg-muted">
+                <div className="h-full w-full bg-gradient-to-r from-muted via-muted-foreground/10 to-muted bg-[length:200%_100%] animate-[shimmer_1.5s_infinite]" />
+              </div>
+            )}
+            <video
+              ref={videoRef}
+              src={video}
+              autoPlay
+              loop
+              muted
+              playsInline
+              onLoadedData={() => setVideoLoaded(true)}
+              onCanPlayThrough={() => setVideoLoaded(true)}
+              className={cn(
+                "pointer-events-none mx-auto h-40 w-full object-cover object-top transition-opacity duration-500",
+                videoLoaded ? "opacity-100" : "opacity-0"
+              )}
+            />
+          </div>
         )}
-        {image && (
+        {image && !video && (
           <Image
             src={image}
             alt={title}
