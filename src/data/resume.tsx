@@ -139,7 +139,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/projects/langgraph-rag.mp4", // rename "Langgraph rag.mp4" → langgraph-rag.mp4
+      video: "/projects/Langgraph-rag.mp4", // rename "Langgraph rag.mp4" → langgraph-rag.mp4
     },
     {
       title: "Gig-Marketplace",
